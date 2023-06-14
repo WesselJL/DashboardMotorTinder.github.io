@@ -2,22 +2,18 @@
 <html>
 <head>
   <title>Graphs</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.28.3"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
       background-color: #343a40;
       color: #fff;
-    }
-
-    .container {
-      margin-top: 30px;
+      margin: 0;
+      padding: 0;
     }
 
     .chart-container {
-      background-color: #212529;
-      padding: 20px;
-      border-radius: 5px;
+      width: 100%;
+      min-height: 400px;
     }
   </style>
 </head>
@@ -33,11 +29,13 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.28.3"></script>
   <script>
     var options1 = {
       chart: {
         type: 'line',
         height: 400,
+        background: '#212529',
         foreColor: '#fff'
       },
       series: [{
@@ -58,6 +56,7 @@
       chart: {
         type: 'line',
         height: 400,
+        background: '#212529',
         foreColor: '#fff'
       },
       series: [{
